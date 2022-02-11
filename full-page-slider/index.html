@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
 <title>Document</title>
-<link rel="stylesheet" type="text/css" href="/style.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
     <header>
         <a href="#" class="logo">Producst.</a>
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Store</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </header>
     <section class="banner">
         <div class="imgBx">
-            <img src="/images/img1.jpg" class="active" alt="">
-            <img src="/images/img2.jpg" alt="">
-            <img src="/images/img3.jpg" alt="">
-            <img src="/images/img4.jpg" alt="">
+            <img src="./assets/img/img1.jpg" class="active" alt="">
+            <img src="./assets/img/img2.jpg" alt="">
+            <img src="./assets/img/img3.jpg" alt="">
+            <img src="./assets/img/img4.jpg" alt="">
         </div>
 
         <div class="contentBx">
@@ -54,41 +54,6 @@
         </ul>
     </section>
 
-    <script type="text/javascript">
-        const imgBx = document.querySelector('.imgBx');
-        const slides = imgBx.getElementsByTagName('img')
-        var i = 0;
-
-        function nextSlide(){
-            slides[i].classList.remove('active');
-            i = (i + 1) % slides.length;
-            slides[i].classList.add('active');
-        }
-
-        function PrevSlide(){
-            slides[i].classList.remove('active');
-            i = (i - 1 + slides.length) % slides.length;
-            slides[i].classList.add('active');
-        }
-
-
-
-
-        const contentBx = document.querySelector('.contentBx');
-        const slidesText = contentBx.getElementsByTagName('div')
-        var j = 0;
-
-        function nextSlideText(){
-            slidesText[j].classList.remove('active');
-            j = (j + 1) % slidesText.length;
-            slidesText[j].classList.add('active');
-        }
-
-        function PrevSlideText(){
-            slidesText[j].classList.remove('active');
-            j = (j - 1 + slidesText.length) % slidesText.length;
-            slidesText[j].classList.add('active');
-        }
-    </script>
+   <script src="./assets/js/index.js"></script>
 </body>
 </html>
